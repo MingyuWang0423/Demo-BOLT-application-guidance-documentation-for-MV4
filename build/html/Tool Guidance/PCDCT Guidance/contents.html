@@ -1,0 +1,327 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How to use PCDCT Data Tool &mdash; MV4 Guidance v1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="TubeEDR" href="../TubeEDR/index.html" />
+    <link rel="prev" title="Tool Guidance" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MV4 Guidance
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../MBD%20Documentation/index.html">MBD Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../MBD%20Visualization/index.html">MBD Visualization</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Tool Guidance</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to use PCDCT Data Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python"><strong>1. Python解释器安装</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><strong>2. Python交互式命令行</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcdct"><strong>3. 命令行运行PCDCT数据处理工具</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vscode"><strong>4. 安装VScode</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vscodepcdct"><strong>5. 使用VScode运行PCDCT数据处理工具</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../TubeEDR/index.html">TubeEDR</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MV4 Guidance</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Tool Guidance</a> &raquo;</li>
+        
+      <li>How to use PCDCT Data Tool</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/Tool Guidance/PCDCT Guidance/contents.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-use-pcdct-data-tool">
+<h1>How to use PCDCT Data Tool<a class="headerlink" href="#how-to-use-pcdct-data-tool" title="Permalink to this headline">¶</a></h1>
+<p>该教程用于帮助用户理解如何使用PCDCT Data Tool。</p>
+<p>请点击<a class="reference external" href="https://carcgl.sharepoint.com/sites/PCDCTTool/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x012000D0DD37E577FC5440B792C14CBE008619&amp;id=%2Fsites%2FPCDCTTool%2FShared%20Documents%2FGeneral%2FDataPlot%5FV1%2Ezip&amp;parent=%2Fsites%2FPCDCTTool%2FShared%20Documents%2FGeneral">此处</a>获取PCDCT Data Tool压缩包。</p>
+<div class="section" id="python">
+<h2><strong>1. Python解释器安装</strong><a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>在下面的链接中找到python的安装包:
+<font color="blue">\172.24.236.30\srdc\Large_Chiller\18-MBD(ZXJ)\MBD</font><br />
+<img alt="../../_images/110.png" src="../../_images/110.png" /></p></li>
+<li><p>下载成功后，双击安装程序，开始安装。(需与IT联系获取admin权限)</p></li>
+<li><p>注意安装到这一步的时候，一定要勾选 Add Python 3.7 to path 选项， 然后再点击 Customize installation
+<img alt="../../_images/112.png" src="../../_images/112.png" /></p></li>
+<li><p>在下图这一步时，点击 Next 即可
+<img alt="../../_images/24.png" src="../../_images/24.png" /></p></li>
+<li><p>在下图这一步时，按图示步骤操作。随后，等待安装完成。
+<img alt="../../_images/32.png" src="../../_images/32.png" /></p>
+<p><img alt="../../_images/42.png" src="../../_images/42.png" /></p>
+</li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h2><strong>2. Python交互式命令行</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>运行python程序，直接在命令行中敲 python就行了，不必写上完整的Python.exe的路径。如下所示：</p>
+<p><img alt="../../_images/62.png" src="../../_images/62.png" /></p>
+</div>
+<div class="section" id="pcdct">
+<h2><strong>3. 命令行运行PCDCT数据处理工具</strong><a class="headerlink" href="#pcdct" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>打开命令行窗口。
+<img alt="../../_images/72.png" src="../../_images/72.png" /></p></li>
+<li><p>进入代码文件所在目录。
+<img alt="../../_images/82.png" src="../../_images/82.png" /></p></li>
+<li><p>使用<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> </code>安装依赖库pandas，datetime and plotly。</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas</span></code>
+<img alt="../../_images/92.png" src="../../_images/92.png" />
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">datetime</span></code>
+<img alt="../../_images/102.png" src="../../_images/102.png" />
+<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">plotly</span></code>
+<img alt="../../_images/114.png" src="../../_images/114.png" /></p>
+</li>
+<li><p>将需要绘制的数据以.csv的格式存放在LabData文件夹里。
+<img alt="../../_images/122.png" src="../../_images/122.png" /></p></li>
+<li><p>打开PCDCT.py文件，在第9行中，将数据文件名更改为需要绘制的文件名(不用加.csv后缀)
+<img alt="../../_images/132.png" src="../../_images/132.png" /></p></li>
+<li><p>在命令行里面敲入命令
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">PCDCT.py</span></code>
+<img alt="../../_images/152.png" src="../../_images/152.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="vscode">
+<h2><strong>4. 安装VScode</strong><a class="headerlink" href="#vscode" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>在下面的链接中找到vscode的安装包:
+<font color="blue">\172.24.236.30\srdc\Large_Chiller\18-MBD(ZXJ)\MBD</font><br />
+<img alt="../../_images/29.png" src="../../_images/29.png" /></p></li>
+<li><p>双击下载后的可执行文件，安装。
+<img alt="../../_images/211.png" src="../../_images/211.png" /></p></li>
+<li><p>勾选同意，点击下一步。
+<img alt="../../_images/221.png" src="../../_images/221.png" /></p></li>
+<li><p>选择安装位置。然后点击下一步。
+<img alt="../../_images/231.png" src="../../_images/231.png" /></p></li>
+<li><p>点击下一步(不创建开始菜单可以不勾选)
+<img alt="../../_images/241.png" src="../../_images/241.png" /></p></li>
+<li><p>勾选创建快捷方式，点击下一步。
+<img alt="../../_images/25.png" src="../../_images/25.png" /></p></li>
+<li><p>点击安装，开始安装。
+<img alt="../../_images/26.png" src="../../_images/26.png" /></p></li>
+<li><p>等待安装结束。
+<img alt="../../_images/27.png" src="../../_images/27.png" /></p>
+<p><img alt="../../_images/28.png" src="../../_images/28.png" /></p>
+</li>
+</ol>
+</div>
+<div class="section" id="vscodepcdct">
+<h2><strong>5. 使用VScode运行PCDCT数据处理工具</strong><a class="headerlink" href="#vscodepcdct" title="Permalink to this headline">¶</a></h2>
+<p>1.在 文件 选项下，选择将文件夹添加到工作区</p>
+<p><img alt="../../_images/162.png" src="../../_images/162.png" /></p>
+<p>2.在 终端 选项下， 选择新建终端。</p>
+<p><img alt="../../_images/171.png" src="../../_images/171.png" /></p>
+<p>3.在终端中使用<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> </code>安装依赖库pandas，datetime and plotly。</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pandas</span></code>
+<img alt="../../_images/181.png" src="../../_images/181.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">datetime</span></code>
+<img alt="../../_images/191.png" src="../../_images/191.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">plotly</span></code>
+<img alt="../../_images/201.png" src="../../_images/201.png" /></p>
+<p>4.将需要绘制的数据以.csv的格式存放在LabData文件夹里。</p>
+<p><img alt="../../_images/122.png" src="../../_images/122.png" /></p>
+<p>5.打开PCDCT.py文件，在第9行中，将数据文件名更改为需要绘制的文件名(不用加.csv后缀)</p>
+<p><img alt="../../_images/132.png" src="../../_images/132.png" /></p>
+<p>6.点击运行python文件。</p>
+<p><img alt="../../_images/142.png" src="../../_images/142.png" /></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../TubeEDR/index.html" class="btn btn-neutral float-right" title="TubeEDR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Tool Guidance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Mingyu Wang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

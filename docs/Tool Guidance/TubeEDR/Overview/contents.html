@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>0. Re-Organization of 17-19-23 Tube Data EDRs &mdash; MV4 Guidance v1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> MV4 Guidance
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../MBD%20Documentation/index.html">MBD Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../MBD%20Visualization/index.html">MBD Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Tool Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">MV4 Guidance</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>0. Re-Organization of 17-19-23 Tube Data EDRs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../../_sources/Tool Guidance/TubeEDR/Overview/contents.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="re-organization-of-17-19-23-tube-data-edrs">
+<h1>0. Re-Organization of 17-19-23 Tube Data EDRs<a class="headerlink" href="#re-organization-of-17-19-23-tube-data-edrs" title="Permalink to this headline">¶</a></h1>
+<p>For decades, large chiller product engineers worked hard to bring out a new product design under the guidance of passport process and summarize essential design data into EDR(Engineering data release).</p>
+<p>These EDRs support product design work for a long time, and will continue, yet engineer pioneers starts to find things that is hard to be covered well, since the rapid growth of projects and toolchains, especially in the tube section, which we called 17-19-23 tube EDRs(17-19-23 C / D / G).</p>
+<p><em><strong>These things are identified as:</strong></em></p>
+<table><tr><td bgcolor=#DCDCDC>  <p><strong>1. Uneasy to inspect tube details:</strong></p>
+<p>Those pioneers finds since more and more tubes from different projects are added, it is harder and harder to get tube parameter quickly. Inspection plays important role in performance verification, tube design and selection. Acquiring data from a word or pdf file is not a friendly way.</p>
+</td></tr></table><hr class="docutils" />
+<table><tr><td bgcolor=#DCDCDC>   <p><strong>2. Complicate data transfer process:</strong></p>
+<p>Those pioneers finds they need spent additional effort to convert data information from pdf / word EDR files to accessible excel data before putting into digital toolchains to enable modeling and simulation, with a potential risk to give a wrong conversion and cause incorrect performance prediction.</p>
+<p><em>Job ticket: <a class="reference external" href="https://carcgl.sharepoint.com/:w:/r/sites/CHVACBoltMBD/Shared%20Documents/Job%20Tickets/Active/Flooded%20HX%27r%20Tube%20Rating/JT_BOLT%20Flooded%20Tube%20Data%20Re-org.docx?d=wd3ff1eab20974385901902b5cf83644c&amp;csf=1&amp;web=1&amp;e=lPeFaK">BOLT Flooded HX Tube Data Re-organization</a></em></p>
+</td></tr></table><hr class="docutils" />
+<table><tr><td bgcolor=#DCDCDC>   <p><strong>3. Exsisted various EDR formats: Those EDR contributor:</strong></p>
+<p>Pioneers from function teams-large chiller, small chiller, HT…- finds they owns various data formats, situation becomes worse in tube EDRs which can be used across projects. Pioneers spends extra time to generate different formatted data even from one source, and huge effort to identify the gap between those formats to make sure tubes are used correctly.</p>
+</td></tr></table><hr class="docutils" />
+<p>Based on the truths - faster and faster tube data inspection, smarter and smarter processes, more and more working groups - are needed, then EDR, especially tube EDRs, stongly desire for an accessible excel format data for all water cooled chiller teams.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th style="text-align: center;">No.</th>
+<th style="text-align: left;">Topics Covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">EDR Content Change</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">CMAE EDR Structure</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">EDR Working Process</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Introduction Video</td>
+</tr>
+</tbody>
+</table><p>Contact:
+<font size=2></p>
+<p><a class="reference external" href="mailto:mike&#46;stark&#37;&#52;&#48;carrier&#46;com">mike<span>&#46;</span>stark<span>&#64;</span>carrier<span>&#46;</span>com</a>;<br /><a class="reference external" href="mailto:xijia&#46;zhu&#37;&#52;&#48;carrier&#46;com">xijia<span>&#46;</span>zhu<span>&#64;</span>carrier<span>&#46;</span>com</a>;<br /><a class="reference external" href="mailto:qianyu&#46;yang&#37;&#52;&#48;carrier&#46;com">qianyu<span>&#46;</span>yang<span>&#64;</span>carrier<span>&#46;</span>com</a> for tube EDR;<br /><a class="reference external" href="mailto:dhruv&#46;hoysall&#37;&#52;&#48;carrier&#46;com">dhruv<span>&#46;</span>hoysall<span>&#64;</span>carrier<span>&#46;</span>com</a> for HTG single tube EDR;<br /><a class="reference external" href="mailto:jinliang&#46;wang1&#37;&#52;&#48;carrier&#46;com">jinliang<span>&#46;</span>wang1<span>&#64;</span>carrier<span>&#46;</span>com</a> for NAO tube EDR;<br /><a class="reference external" href="mailto:alireza&#46;behfar&#37;&#52;&#48;carrier&#46;com">alireza<span>&#46;</span>behfar<span>&#64;</span>carrier<span>&#46;</span>com</a> for NAO tube EDR;<br /><a class="reference external" href="mailto:lishan&#46;wang&#37;&#52;&#48;carrier&#46;com">lishan<span>&#46;</span>wang<span>&#64;</span>carrier<span>&#46;</span>com</a> for BOLT adoption;<br /><a class="reference external" href="mailto:dong&#46;liu&#37;&#52;&#48;carrier&#46;com">dong<span>&#46;</span>liu<span>&#64;</span>carrier<span>&#46;</span>com</a> for BOLT adoption;<br /><a class="reference external" href="mailto:haiyan&#46;huang2&#37;&#52;&#48;carrier&#46;com">haiyan<span>&#46;</span>huang2<span>&#64;</span>carrier<span>&#46;</span>com</a> for EDR working process;<br /><a class="reference external" href="mailto:mingyu&#46;wang&#37;&#52;&#48;carrier&#46;com">mingyu<span>&#46;</span>wang<span>&#64;</span>carrier<span>&#46;</span>com</a> for help files and training video;</p>
+</font></div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Mingyu Wang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

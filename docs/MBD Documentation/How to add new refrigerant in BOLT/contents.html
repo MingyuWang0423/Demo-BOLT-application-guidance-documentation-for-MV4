@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>How to add new refrigerant in BOLT &mdash; MV4 Guidance v1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MBD Visualization" href="../../MBD%20Visualization/index.html" />
+    <link rel="prev" title="MV4 MBD Installation Guidance" href="../MV4%20MBD%20Installation%20Guidance/contents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MV4 Guidance
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">MBD Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../JOB%20Ticket/contents.html">JOB Ticket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../JOB%20Ticket/contents.html#head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../KPI%20Selection%20MR%20Guidance/contents.html">KPI Selection MR Guidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MV4%20Frontier%20MBD%20Solution%20Guidance/contents.html">MV4 Frontier MBD Solution Guidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MV4%20MBD%20Installation%20Guidance/contents.html">MV4 MBD Installation Guidance</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to add new refrigerant in BOLT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#guide-for-implementation-of-custom-refrigerants-in-impact-bolt-1-0"><strong>Guide for implementation of custom refrigerants in IMPACT-BOLT 1.0</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../MBD%20Visualization/index.html">MBD Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tool%20Guidance/index.html">Tool Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MV4 Guidance</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">MBD Documentation</a> &raquo;</li>
+        
+      <li>How to add new refrigerant in BOLT</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/MBD Documentation/How to add new refrigerant in BOLT/contents.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-add-new-refrigerant-in-bolt">
+<h1>How to add new refrigerant in BOLT<a class="headerlink" href="#how-to-add-new-refrigerant-in-bolt" title="Permalink to this headline">¶</a></h1>
+<p>This document is the property of Carrier Corporation and is delivered on the express condition that it is not to be disclosed, reproduced in whole or in part, or used for manufacture by anyone other than Carrier Corporation without its written consent, and that no right is granted to disclose or so use any information provided in this document.</p>
+<div class="section" id="guide-for-implementation-of-custom-refrigerants-in-impact-bolt-1-0">
+<h2><strong>Guide for implementation of custom refrigerants in IMPACT-BOLT 1.0</strong><a class="headerlink" href="#guide-for-implementation-of-custom-refrigerants-in-impact-bolt-1-0" title="Permalink to this headline">¶</a></h2>
+<p><font color="red">NOTE:  </font><br /></p>
+<ol class="simple">
+<li><p>All the implementation steps are executed with installer, with a valid “CustomRefrigerant” folder provided by SRDC MASC team.</p></li>
+<li><p>If the library is already installed before the custom refrigerant implementation, please re-launch the library installer and select “Repair” for custom refrigerant implementation.</p></li>
+</ol>
+<p>If you are requesting new custom refrigerants, or if you have any feedback or questions about the implementation process, please contact MASC team from SRDC (Yunxin.wang&#64;carrier.com).</p>
+<p><font color="red">STEP 0: </font><br /> Before implementation, please check custom refrigerant files you received. It should contain:</p>
+<p><strong>Folder named “CustomRefrigerant RXXX X.X” including:</strong></p>
+<p><strong>RXXX.dll:</strong> 64bit with SI unit refrigerant DLL files. This file is provided by Dick if NDA refrigerant, provided by SRDC if not. Please take this file with <a class="reference external" href="https://windchill.apps.carrier.com/Windchill/app/#ptc1/tcomp/infoPage?ContainerOid=OR%3Awt.projmgmt.admin.Project2%3A1493936200&amp;oid=OR%3Awt.folder.SubFolder%3A5955495546&amp;u8=1">this Windchill link</a> and verify the DLL file information[1]:</p>
+<p><strong>RXXX.mo:</strong> .mo files for refrigerant package used in Dymola.</p>
+<p><strong>package.order:</strong> .order files used in Dymola for package order.</p>
+<p><strong>package.mo:</strong> .mo files used in Dymola.</p>
+<p><strong>Resources:</strong> a subfolder containing onPath.json file.</p>
+<p><strong>RefrigerantProperty:</strong> a subfolder containing several modelica .mo files. This subfolder exists only for R-515B refrigerant.</p>
+<p>[1] To check refrigerant DLL file information, you can right click on DLL file -&gt; Select “Properties” -&gt; Select “Details” tab, you can find all information in this tab:</p>
+<p><img alt="../../_images/1.png" src="../../_images/1.png" /></p>
+<p>Each refrigerant DLL file has a 4-digit number file version, the second number related to interface version. For example, the refrigerant DLL file with figure above is with interface version V1, because second number is “1” (2.1.12.835).</p>
+<p><font color="red">NOTE:  </font><br /> If you miss any of above file or folders in the provided custom refrigerant package, that means something might be wrong and please contact MASC team from SRDC (Yunxin.wang&#64;carrier.com) to confirm.</p>
+<p><font color="red">STEP 1: </font><br /></p>
+<p><strong>If this is the first time you receive this custom refrigerant folder:</strong></p>
+<p>Please copy this custom refrigerant folder at somewhere in your PC (not suggested to put it into “libraries” folder of installed IMPACT-BOLT, suggest remove “RXXX” from folder name).</p>
+<p>For example, change name “CustomRefrigerant R290 2.0” to “CustomRefrigerant 2.0”.</p>
+<p><strong>If already have a custom refrigerant folder in your PC:</strong>
+Please just copy all refrigerant RXXX.mo &amp; RXXX.dll into one custom refrigerant folder. If it contains R-515B, then you should also make sure **“RefrigerantProperty”**subfolder existed in custom refrigerant folder.</p>
+<p>For example, if you have 3 refrigerant .mo and .dll file recently provided, put all these 3 refrigerant .mo and .dll files into “CustomRefrigerant 2.0” which already existed on your PC and this folder should contain all necessary file in <font color="red">STEP 0. </font><br />.</p>
+<p><font color="red">NOTE:  </font><br /> please put all the custom refrigerant .mo and .dll files you want implement into this CustomRefrigerant X.X folder, to make sure they are well-implemented into all BOLT libraries.</p>
+<p><font color="red">STEP 2: </font><br /></p>
+<p>Please use IMPACT-BOLT library installer to implement the custom refrigerant into IMPACT-BOLT, by following library installer instruction file.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../MBD%20Visualization/index.html" class="btn btn-neutral float-right" title="MBD Visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../MV4%20MBD%20Installation%20Guidance/contents.html" class="btn btn-neutral float-left" title="MV4 MBD Installation Guidance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Mingyu Wang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

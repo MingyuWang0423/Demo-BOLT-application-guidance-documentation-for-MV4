@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en-US" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>MV4 MBD Installation Guidance &mdash; MV4 Guidance v1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to add new refrigerant in BOLT" href="../How%20to%20add%20new%20refrigerant%20in%20BOLT/contents.html" />
+    <link rel="prev" title="MV4 Frontier MBD Solution Guidance" href="../MV4%20Frontier%20MBD%20Solution%20Guidance/contents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MV4 Guidance
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">MBD Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../JOB%20Ticket/contents.html">JOB Ticket</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../JOB%20Ticket/contents.html#head">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../KPI%20Selection%20MR%20Guidance/contents.html">KPI Selection MR Guidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MV4%20Frontier%20MBD%20Solution%20Guidance/contents.html">MV4 Frontier MBD Solution Guidance</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MV4 MBD Installation Guidance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-bolt-platform-and-libraries"><strong>1. Install Bolt platform and libraries:</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-license-files"><strong>2. Update license files:</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-mv4-workspace-and-library"><strong>3. Update MV4 workspace and library</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enable-desktop-version-bolt-simulation"><strong>4. Enable Desktop Version BOLT Simulation</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../How%20to%20add%20new%20refrigerant%20in%20BOLT/contents.html">How to add new refrigerant in BOLT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../MBD%20Visualization/index.html">MBD Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tool%20Guidance/index.html">Tool Guidance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MV4 Guidance</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">MBD Documentation</a> &raquo;</li>
+        
+      <li>MV4 MBD Installation Guidance</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/MBD Documentation/MV4 MBD Installation Guidance/contents.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mv4-mbd-installation-guidance">
+<h1>MV4 MBD Installation Guidance<a class="headerlink" href="#mv4-mbd-installation-guidance" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-bolt-platform-and-libraries">
+<h2><strong>1. Install Bolt platform and libraries:</strong><a class="headerlink" href="#install-bolt-platform-and-libraries" title="Permalink to this headline">¶</a></h2>
+<p>This step help user to install official IPM Bolt with libraries, BOLT office asks 50GB free space on hard driver, after our test, about 10GB is OK, depends on future</p>
+<p>a.  Uninstall IPM Bolt and IPM Bolt library if there is a previous version.
+<img alt="../../_images/110.png" src="../../_images/110.png" /></p>
+<p>b.  Check free space on hard driver: Bolt office asks 50GB free space on hard driver, after our test, 10GB is OK, but depends on following simulation activities performed;</p>
+<p><img alt="../../_images/23.png" src="../../_images/23.png" /></p>
+<p>c.  Copy install package to local PC, link: <font color="#0000dd">\\172.24.236.60\srdc\Large_Chiller\29-Tools(ZXJ)\Bolt
+</font><br /></p>
+<p><img alt="../../_images/31.png" src="../../_images/31.png" /></p>
+<p>d.  Install IPMBOLT and Bolt libraries in sequence, by clicking “setup.exe”.</p>
+<p><img alt="../../_images/41.png" src="../../_images/41.png" /></p>
+</div>
+<div class="section" id="update-license-files">
+<h2><strong>2. Update license files:</strong><a class="headerlink" href="#update-license-files" title="Permalink to this headline">¶</a></h2>
+<p>Due to Bolt development, internet situation and corporation policy change, original license package is not available, below steps provide an updated license solution.</p>
+<p>a.  Replace “com.modelon.impact.editing-server.jar” under <font color="#0000dd"><em>C:\IPMBOLT\Platform\editing-server</em></font><br /> with the one in  <font color="#0000dd"><em>\\172.24.236.60\srdc\Large_Chiller\29-Tools(ZXJ)\Bolt\IPMBOLT_v2.2.92.0_Patch</em> </font><br /></p>
+<p>There will be an error message if not update:</p>
+<p><img alt="../../_images/51.png" src="../../_images/51.png" /></p>
+<p>b.  Replace “assets.zip” under C:\IPMBOLT\Platform\editing-server\jsRoot with the one in \172.24.236.60\srdc\Large_Chiller\29-Tools(ZXJ)\Bolt\IPMBOLT_v2.2.92.0_Patch</p>
+<p>c.  Copy “BOLT1_USER_CLOUD_SERVER_LICENSE_80.lic” under \172.24.236.60\srdc\Large_Chiller\29-Tools(ZXJ)\Bolt\IPMBOLT_v2.2.92.0_Patch to<br />C:\Users\zhux2\AppData\Roaming\Modelon\Licenses\Server (Change “zhux2” to your own user name), otherwise there is a certification error:</p>
+<p><img alt="../../_images/61.png" src="../../_images/61.png" /></p>
+</div>
+<div class="section" id="update-mv4-workspace-and-library">
+<h2><strong>3. Update MV4 workspace and library</strong><a class="headerlink" href="#update-mv4-workspace-and-library" title="Permalink to this headline">¶</a></h2>
+<p>This step provides MV series models and supported libraries for MV4 concept design.</p>
+<p>a.  Delete all contents under “C:\Users\zhux2\impact\libraries”(You may update the user to your account name);</p>
+<p>b.  Open this link to access library, link: \172.28.203.10\srdc\Temp\ZhuXJ</p>
+<p><img alt="../../_images/71.png" src="../../_images/71.png" /></p>
+<p>c.  Copy folder “Polaris” to “C:\Users\zhux2\impact\workspaces”; if conflict, change original folder “Polaris” to another name;</p>
+<p>d.  Copy folders with below names to “C:\Users\zhux2\impact\libraries”:
+“BOLT 1.24.0”；“Private_database 1.24.1”；“Public_database 1.24.0”；“RRBP_BlackBoxLibrary 1.24.0</p>
+</div>
+<div class="section" id="enable-desktop-version-bolt-simulation">
+<h2><strong>4. Enable Desktop Version BOLT Simulation</strong><a class="headerlink" href="#enable-desktop-version-bolt-simulation" title="Permalink to this headline">¶</a></h2>
+<p>a.  Open “Bolt” by clicking desktop shortcut, and choose “Polaris” project;</p>
+<p><img alt="../../_images/81.png" src="../../_images/81.png" /></p>
+<p>b.  In the left bar(Click triangle button to display if not shown), choose “System 19MV”-“Lumped”;</p>
+<p><img alt="../../_images/91.png" src="../../_images/91.png" /></p>
+<p>c.  Open the model you want to simulate by double-click;</p>
+<p><img alt="../../_images/101.png" src="../../_images/101.png" /></p>
+<p>d.  Change default unit: Click setting button in top right  in the popup dialogue, choose “Units” tag  switch “Display Units” from SI to imperial  Choose “F” from dropdown list for “K”, choose “in” from dropdown list for “m” “Save” to close this window</p>
+<p><img alt="../../_images/113.png" src="../../_images/113.png" /></p>
+<p>e.  Right click triangle button in the right side, first choose “Bolt Steady State”, click triangle button to enable simulation;</p>
+<p><img alt="../../_images/121.png" src="../../_images/121.png" /></p>
+<p>f.  Judge successful simulation by:
+(1) f1:  There is orange background shown under “result”;
+(2) Open the right bar, results are shown under simulations category without  cross symbol in front of “Result”;</p>
+<p><img alt="../../_images/131.png" src="../../_images/131.png" /></p>
+<p>(3) Click any refrigerant node, -&gt; click sticky eye -&gt; click the triangle button to show node details -&gt; Make sure there are result in “Value” column;</p>
+<p>If no result in “Value”, need check free space in hard disk, make sure 5GB is reserved.</p>
+<p><img alt="../../_images/141.png" src="../../_images/141.png" />
+<img alt="../../_images/151.png" src="../../_images/151.png" />
+<img alt="../../_images/161.png" src="../../_images/161.png" /></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../How%20to%20add%20new%20refrigerant%20in%20BOLT/contents.html" class="btn btn-neutral float-right" title="How to add new refrigerant in BOLT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../MV4%20Frontier%20MBD%20Solution%20Guidance/contents.html" class="btn btn-neutral float-left" title="MV4 Frontier MBD Solution Guidance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, Mingyu Wang.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
